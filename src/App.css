@@ -1,38 +1,739 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+#header {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#header .btn {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #000;
+  border-radius: 5rem;
+
+  background-color: #ffff;
+}
+#header .btn-outline-success {
+  border-color: #ffff;
+}
+.wrapper {
+  background-color: #d9f0ff;
+}
+.banner-title {
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+.banner {
+  transition: all 0.3s ease;
+}
+.banner-para {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: gray;
+}
+.search {
+  width: 50vw;
+  height: auto;
+  background-color: #ffff;
+  border-radius: 50px;
+}
+.search input {
+  width: 80%;
+  font-size: 20px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+.search .search-btn {
+  border: none;
+  background: #000;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.fa-solid {
+  color: #ffff;
+}
+.bannerimg {
+  width: 100%;
+  height: 100%;
+}
+.new-books {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  background-color: #0089e3;
+  width: 170px;
+  border-radius: 5px;
+  color: #ffff;
+  font-weight: bold;
+}
+.discover-para {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+.booksFind {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.book-card {
+  width: 16vw;
+  height: auto;
+}
+.book-card img {
+  width: 60%;
+  height: 60%;
+}
+.book-card h1 {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.book-card:hover {
+  background-color: #d9f0ff;
+  border-radius: 15px;
+}
+.btn-find {
+  font-size: 25px;
+  text-transform: uppercase;
+  width: 260px;
+  background-color: #4fb3f6;
+  border-color: #4fb3f6;
+  color: #ffff;
+  font-family: "Lato", sans-serif;
+  border-radius: 40px;
+  border: 2px solid #4fb3f6;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carousel-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.carousels {
+  width: 650px;
+  height: 400px;
+  position: relative;
+  border: 12px solid #d9f0ff;
 }
+.carousel-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.post {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  width: 100%;
+}
+.carousel-inner {
+  width: 900px;
+  height: 500px;
+}
+.carousel {
+  height: auto;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+.review-text {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.rating {
+  font-family: "Poppins", sans-serif;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  font-size: 22px;
+}
+#question {
+  height: 15vh;
+  background-color: #d9f0ff;
+}
+.question-title {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.question-para {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+#question .btn {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #000;
+  border-radius: 5rem;
+  background-color: none;
+  border-color: #000;
+}
+.footer-section .row {
+  width: 100%;
+  height: auto;
+}
+.col1-heading {
+  font-size: 30px;
+  text-align: start;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #000;
+}
+.youtube-bg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.youtube-bg .fa-brands {
+  color: #ffff;
+}
+.cookie-para {
+  width: 80%;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+}
+.links-heading {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+}
+.links {
+  display: flex;
+  justify-content: start;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+.footer-section img {
+  width: 200px;
+  height: auto;
+}
+.btn-secondary {
+  width: 300px;
+  background-color: #ebf2f7 !important;
+  border-color: #ebf2f7;
+}
+.btn-secondary:focus {
+  outline: none !important;
+  background-color: #ebf2f7 !important;
+  border-color: #ebf2f7 !important;
+  color: #000 !important;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none !important;
+}
+.footer-section .btn {
+  color: #000;
+  border-radius: 20px;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: lighter;
+}
+.dropdown-menu {
+  min-width: 18rem !important;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+/* join page */
+.join-title {
+  width: 40vw;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+.join-para {
+  width: 38vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+.links-btn {
+  width: 30vw;
+  height: 5vh;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #000;
+  border: 2px solid #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.apple-link {
+  width: 30vw;
+  height: 5vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #fff;
+  border: 2px solid #000;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.facebook-link {
+  width: 30vw;
+  height: 5vh;
+  background-color: #3c5b96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #fff;
+  border: 2px solid #3c5b96;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.already-title {
+  font-family: "Poppins", sans-serif;
+}
+.login-link {
+  font-family: "Poppins", sans-serif;
+  color: #3c5b96;
+  font-weight: bold;
+  font-size: 15px;
+}
+.privacy-link {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+/* 2nd navbar */
+.second-nav .btn {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5rem;
+  background-color: #60d399;
+}
+.second-nav .btn-outline-success {
+  border-color: #ffff;
+}
+.second-nav .nav-search {
+  width: 60vw;
+  height: 8vh;
+  background-color: #ebf2f7;
+  border-radius: 30px;
+}
+.second-nav .form-control {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background-color: #ebf2f7;
+  color: #93a2af;
+  border-radius: 15px;
+}
+.nav-search .btn {
+  background-color: #ebf2f7;
+  border: none;
+}
+.nav-search .fa-solid {
+  color: #93a2af;
+}
+.second-nav .bg-light {
+  background-color: #ffff !important;
+  border-bottom: 2px solid #ebf2f7;
+}
+.or {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+}
+.login-form .form-control {
+  width: 30vw;
+  border-radius: 30px;
+  background-color: #ebf2f7;
+  border-color: #ebf2f7;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #939fbc;
+}
+.login-btn {
+  width: 30vw;
+  background-color: #60d399;
+  border-radius: 30px;
+  height: 5vh;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.form-check-label {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+.forgot-link {
+  font-size: 12px;
+  color: #044c83;
+  font-family: "Poppins", sans-serif;
+}
+.sign-link {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.sign-link a {
+  color: #044c83;
+}
+/* ask question page */
+.question-quote {
+  text-align: start;
+  width: 15vw;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #60d399;
+  letter-spacing: -0.0625rem;
+  line-height: 40px;
+}
+.question-center {
+  border: 2px solid #edf4f8;
+  width: 50vw;
+  height: 60vh;
+}
+.ask-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.question-center .form-control {
+  height: 30vh;
+  border-radius: 20px;
+  background-color: #ebf2f7;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.question-center .form-control:focus {
+  box-shadow: none !important;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+.question-center .btn-secondary {
+  background-color: #ebf2f7 !important;
+  color: #000 !important;
+  font-weight: 200;
+  border-radius: 20px;
+}
+.question-center .btn {
+  background-color: #4fb3f6;
+  width: 20vw;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* books section */
+.books-detail {
+  width: 20vw;
+  height: auto;
+}
+.chapter-details {
+  width: 60vw;
+  height: auto;
+}
+.chapter-details .fa-solid {
+  color: #000;
+}
+.books-detail h1 {
+  font-size: 20px;
+  text-align: start;
+  width: 95%;
+}
+.books-detail .book-card:hover {
+  background-color: #fff;
+}
+.books-detail .image {
+  background-color: #f5f8fa;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.books-detail .other-details {
+  color: #46535f;
+  font-weight: 100;
+  font-size: 14px;
+}
+.accordion-button {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .bannerimg {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .search {
+    width: 100%;
+  }
+  .carousel-inner {
+    width: auto;
+  }
+  .discover-para {
+    font-size: 25px;
+  }
+  .booksFind {
+    font-size: 12px;
+  }
+  .book-card img {
+    height: 100%;
+    width: 100%;
+  }
+  .book-card {
+    width: 30vw;
+  }
+  .join-title {
+    width: 80vw;
+  }
+  .join-para {
+    width: 75vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+  }
+  .links-btn,
+  .apple-link,
+  .facebook-link {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .bannerimg {
+    display: none;
+  }
+  .banner-title {
+    font-size: 60px;
+  }
+  .search {
+    width: 100%;
+  }
+  .carousel-inner {
+    width: 576px;
+  }
+  .discover-para {
+    font-size: 25px;
+  }
+  .booksFind {
+    font-size: 12px;
+  }
+  .book-card img {
+    height: 100%;
+    width: 100%;
+  }
+  .book-card {
+    width: 30vw;
+  }
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join-title {
+    width: 80vw;
+  }
+  .join-para {
+    width: 75vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+  }
+  .links-btn,
+  .apple-link,
+  .facebook-link {
+    width: 50vw;
+  }
+  .login-form .form-control {
+    width: 80vw;
+  }
+  .login-btn {
+    width: 80vw;
+  }
+  .question-quote {
+    display: none;
+  }
+  .question-center {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ask-title {
+    font-size: 22px;
+  }
+  .question-center .form-control {
+    font-size: 1rem;
+  }
+  .question-center .btn-secondary {
+    width: 80vw;
+  }
+  .question-center .btn {
+    width: 60vw;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .bannerimg {
+    display: none;
+  }
+  .banner-title {
+    font-size: 40px;
+  }
+  .search {
+    width: 100%;
+  }
+  .book-card img {
+    height: 100%;
+    width: 100%;
+  }
+  .book-card {
+    width: 50vw;
+  }
+  .carousel-inner {
+    width: 300px;
+  }
+  .search {
+    display: none;
+  }
+  .discover-para {
+    font-size: 13px;
+  }
+  .booksFind {
+    font-size: 5px;
+  }
+  .review-text {
+    font-size: 17px;
+    text-align: center;
+  }
+  .rating {
+    font-size: 22px;
+  }
+  .carousel-inner {
+    width: 300px;
+    height: auto;
+  }
+  .carousel-content h1 {
+    font-size: 20px;
+  }
+  .post {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .question-title {
+    font-size: 10px;
+  }
+  .question-para {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  #question .btn {
+    font-size: 9px;
+  }
+  .dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .join-title {
+    width: 75vw;
+    font-size: 15px;
+  }
+  .join-para {
+    width: 75vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+  .links-btn,
+  .apple-link,
+  .facebook-link {
+    width: 80vw;
+  }
+  .privacy-link {
+    width: 85vw;
+    font-size: 10px;
+    text-align: center;
+  }
+  .second-nav .nav-search {
+    width: 50vw;
+  }
+  .second-nav .navbar-brand img {
+    width: 35px;
+    height: 35px;
+  }
+  .login-form .form-control {
+    width: 80vw;
+  }
+  .login-btn {
+    width: 80vw;
+  }
+  .question-quote {
+    display: none;
+  }
+  .question-center {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ask-title {
+    font-size: 13px;
+  }
+  .question-center .form-control {
+    font-size: 1rem;
+  }
+  .question-center .btn-secondary {
+    width: 80vw;
+  }
+  .question-center .btn {
+    width: 60vw;
   }
 }
