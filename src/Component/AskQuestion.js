@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import logo from "../Assests/logo.svg";
 import "../App.css";
 const AskQuestion = () => {
+  const HandleClick = () => {
+    window.location.assign("/free");
+  };
   return (
     <>
       <section className="second-nav">
@@ -50,7 +53,9 @@ const AskQuestion = () => {
                   </Link>
                 </li>
               </ul>
-              <button class="btn btn-outline-success">join for free</button>
+              <button class="btn btn-outline-success" onClick={HandleClick}>
+                join for free
+              </button>
             </div>
           </div>
         </nav>

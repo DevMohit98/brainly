@@ -1,8 +1,6 @@
 import React from "react";
 import "../App.css";
 import logo from "../Assests/logo.svg";
-import google from "../Assests/google.png";
-import aaple from "../Assests/aaple.png";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -54,84 +52,40 @@ const Login = () => {
         </nav>
       </section>
       <section>
-        <div className="d-flex justify-content-center align-items-center flex-column mt-4">
-          <h1 className="text-center join-title mt-3">Welcome back</h1>
-          <p className="join-para text-center mt-3">
-            Get answers within minutes and finish your homework faster
-          </p>
-          <div className="social-links mt-3">
-            <button className="links-btn">
-              <img
-                src={google}
-                alt="google"
-                width="20px"
-                height="20px"
-                className="mr-3"
-              ></img>
-              sign up with google
-            </button>
-          </div>
-          <div className="social-links mt-3">
-            <button className="apple-link">
-              <img
-                src={aaple}
-                alt="google"
-                width="20px"
-                height="20px"
-                className="mr-3 apple-img"
-              ></img>
-              sign up with apple
-            </button>
-          </div>
-          <div className="social-links mt-3">
-            <button className="facebook-link">
-              <i className="fa-brands fa-facebook mr-3"></i>
-              sign up with facebook
-            </button>
-          </div>
-          <h1 className="mt-4 or">or</h1>
-          <form className="mt-4 login-form">
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="username or email"
-              ></input>
-            </div>
-            <div class="mb-3">
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Password"
-              ></input>
-            </div>
-            <div class="mb-3">
-              <button className="login-btn">login</button>
-            </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Keep me logged in
-                </label>
+        <div className="container">
+          <div className="row d-flex justify-content-around">
+            <div className="col col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div className="loginForm p-4">
+                <h1>Login in</h1>
+                <form className="mt-3">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter username or email"
+                    />
+                  </div>
+                  <div class="mb-3 mt-4">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Enter password"
+                    />
+                  </div>
+                  <button className="btn btn-primary mt-3">Log in</button>
+                </form>
+                <p className="mt-3">
+                  I don't have account , <a href="/signup">join now</a>
+                </p>
               </div>
-              <a href="#" className="forgot-link">
-                Forgot your password?
-              </a>
             </div>
-          </form>
-          <h3 className="sign-link mt-4">
-            Don't have an account? <a href="/signup">Sign up</a>
-          </h3>
+            <div className="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+              <h1 className="mt-3 loginQuote">let's start sharing knowlege</h1>
+            </div>
+          </div>
         </div>
       </section>
     </>

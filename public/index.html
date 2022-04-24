@@ -44,7 +44,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>React App</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Brainly</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -85,20 +87,56 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       $(document).ready(function () {
         $(window).scroll(function () {
           var x = $(window).scrollTop();
-          console.log(x);
           if (x > 10) {
             $("#header")
-              .css({ position: "fixed", backgroundColor: "white" })
+              .css({
+                position: "fixed",
+                backgroundColor: "#ffff",
+              })
               .addClass(".fixed-top");
             $(".btn-outline-success").css({ border: "2px solid #000" });
           } else {
             $("#header").css({ position: "", backgroundColor: "" });
             $(".btn-outline-success").css({ border: "" });
             $(".banner").css({ marginTop: "" });
+          }
+        });
+      });
+      $(document).ready(function () {
+        $(".col2").scroll(function () {
+          var z = $(".col2").scrollTop();
+          console.log(z);
+          if (z >= 210 || z <= 220) {
+            $(".Question").removeClass("Active");
+            $(".Help").addClass("Active");
+            $(".para").html(
+              "Our community of experts consists of students, schoolteachers, PhDs, and other geniuses just waiting to tackle your toughest questions."
+            );
+          }
+          if (z > 300) {
+            $(".Help").removeClass("Active");
+            $(".Go").addClass("Active");
+            $(".para").html(
+              "The Brainly community is constantly buzzing with the excitement of endless collaboration, proving that learning is more fun — and more effective — when we put our heads together. Help the community by sharing what you know. Answering questions also helps you learn!"
+            );
+          }
+          if (z > 220 && z < 300) {
+            $(".Go").removeClass("Active");
+          }
+          if (z == 0 && z < 220) {
+            $(".Question").addClass("Active");
+            $(".Help").removeClass("Active");
+            $(".para").html(
+              "Whether you’re stuck on a history question or a blocked by a geometry puzzle, there’s no question too tricky for Brainly."
+            );
           }
         });
       });

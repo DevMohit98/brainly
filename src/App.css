@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -20,7 +21,7 @@
 }
 #header {
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 #header .btn {
@@ -510,6 +511,142 @@ input:focus {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
+/* animation */
+
+.col1 {
+  width: 100%;
+  height: auto;
+}
+.col1 h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #c3d1dd;
+  font-family: "Poppins", sans-serif;
+}
+.Active {
+  color: #000 !important;
+  transition: all 0.4s ease-in;
+}
+.col1 p {
+  font-size: 26px;
+  color: #000;
+  font-weight: 400;
+}
+.para {
+  transition: all 1s ease-out;
+}
+.col2 {
+  width: 100%;
+  height: 50%;
+  overflow-y: scroll;
+}
+.col2 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.col2 h1 {
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+.QuestionBg {
+  width: 100%;
+  height: auto;
+  border: 16px solid #d9f0ff;
+}
+.QuestionBg h1 {
+  line-height: 40px;
+}
+
+.QuestionBg .UserQuestion {
+  font-size: 20px;
+}
+.col2::-webkit-scrollbar {
+  background-color: #fff;
+}
+.back-container .row {
+  height: 70vh;
+}
+.backHead h1 {
+  font-size: 30px;
+}
+/* login Page */
+.loginForm,
+.SignForm {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border: 2px solid #ebf2f7;
+  border-radius: 10px;
+}
+.loginForm h1 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.loginForm .form-control,
+.SignForm .form-control {
+  background-color: #ebf2f7;
+  border-radius: 20px;
+  color: #000 !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.loginForm .btn,
+.SignForm .btn {
+  background-color: #4fb3f6;
+  border-color: #4fb3f6;
+  width: auto;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.loginForm p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.loginForm a,
+.SignForm a {
+  color: #4fb3f6;
+  font-family: "Poppins", sans-serif;
+}
+.loginQuote {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #4fb3f6;
+}
+.SignForm h1 {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+.SignForm p {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+.SignForm .form-label {
+  font-family: "Poppins", sans-serif;
+  color: #939fbc;
+  font-weight: bold;
+}
+.SignForm .form-check .form-check-label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.SignQuote {
+  font-size: 50px;
+  width: 70%;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #4fb3f6;
+}
 @media screen and (min-width: 786px) and (max-width: 992px) {
   .bannerimg {
     display: none;
@@ -545,6 +682,33 @@ input:focus {
   .apple-link,
   .facebook-link {
     width: 50vw;
+  }
+  .col1 h1 {
+    font-size: 30px;
+  }
+  .Active {
+    color: #000 !important;
+    transition: all ease-in;
+  }
+  .col1 p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .back-container .row {
+    height: 100vh;
+  }
+  .col2 {
+    margin-top: 30px;
+  }
+  .loginForm {
+    width: auto;
+    height: auto;
+  }
+  .loginQuote {
+    display: none;
+  }
+  .SignQuote {
+    display: none;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 786px) {
@@ -617,6 +781,34 @@ input:focus {
   }
   .question-center .btn {
     width: 60vw;
+  }
+  .col1 h1 {
+    font-size: 30px;
+  }
+  .Active {
+    color: #000 !important;
+    transition: all ease-in;
+  }
+  .col1 p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .col2 {
+    margin-top: 30px;
+    height: 40vh;
+  }
+  .back-container .row {
+    height: 100vh;
+  }
+  .loginForm {
+    width: auto;
+    height: auto;
+  }
+  .loginQuote {
+    display: none;
+  }
+  .SignQuote {
+    display: none;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 576px) {
@@ -735,5 +927,39 @@ input:focus {
   }
   .question-center .btn {
     width: 60vw;
+  }
+  .col1 h1 {
+    font-size: 30px;
+  }
+  .Active {
+    color: #000 !important;
+    transition: all ease-in;
+  }
+  .col1 p {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .back-container .row {
+    height: 100vh;
+  }
+  .col2 {
+    margin-top: 30px;
+    height: 40vh;
+  }
+  .loginForm {
+    width: auto;
+    height: auto;
+  }
+  .loginQuote {
+    display: none;
+  }
+  .SignQuote {
+    display: none;
+  }
+  .SignForm p {
+    font-size: 16px;
+  }
+  .SignForm a {
+    font-size: 16px;
   }
 }

@@ -8,6 +8,7 @@ import book4 from "../Assests/book4.jpeg";
 import play from "../Assests/play.png";
 import apple from "../Assests/apple.png";
 import { Link } from "react-router-dom";
+import Feedback from "../Component/Feedback";
 import "../App.css";
 const Home = () => {
   const HandleClick = () => {
@@ -87,7 +88,6 @@ const Home = () => {
           </div>
         </section>
       </section>
-
       {/*books */}
       <section className="p-4 m-4">
         <div className="d-flex justify-content-center align-items-center flex-column">
@@ -262,6 +262,8 @@ const Home = () => {
           </a>
         </div>
       </section>
+      {/*feedack*/}
+      <Feedback />
       {/* question */}
       <section
         id="question"
